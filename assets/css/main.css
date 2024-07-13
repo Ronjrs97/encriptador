@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{	margin:0;
+	box-sizing: border-box;
+	font-size: 16px;
+    font-family: inter;
+} 
+
+
+html,body,.container{
+	height: 100%;
+	background: #E8E8E8;
+}
+
+.main{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.logo{
+    height: 95%;
+    width: 8%;
+}
+
+.logoimg{
+    height: 3rem;
+    margin-left: -1.5rem;
+}
+
+.mleft{
+    width: 65%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input{
+    width: 75%;
+    height: 80%;
+    padding-top: 4rem;
+}
+
+#inputtext{
+    height: 100%;
+    width: 100%;
+    background-color: #E8E8E8;
+    border: none !important;
+    resize: none;
+    outline: none;
+    font-size: 2rem;
+    color: #0A3871;
+}
+
+.alert{
+    height: 5%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.sapantext{
+    font-size: 0.75rem;
+    color: #495057;
+    display: flex;
+    align-items: center;
+}
+
+.imgexc{
+    margin-right: 0.3rem;
+}
+
+.buttons{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+button{
+    width: 20.5rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border-radius: 1.4rem;
+    border: 1px solid #0A3871;
+}
+
+.btnencrip{
+    background-color: #0A3871;
+    border-color: #0A3871 !important; 
+    border: none;
+    color: white;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.btndesen{
+    box-shadow: none;
+    color: #0A3871;
+}
+
+.btnc{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.btncopy{
+    background-color: white;
+}
+
+.result{
+    border-radius: 2rem;
+    height: 95%;
+    width: 30%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.texx{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#nonetex{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#nonetex img{
+    width: 15rem;
+}
+
+#nonetex h3{
+    font-size: 1.5rem;
+    color: #343A40;
+    margin-bottom: 0.8rem;
+}
+
+#nonetex span{
+    color: #495057;
+}
+
+#yestext{
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textresultdiv{
+    width: 100%;
+    height: 85%;
+}
+
+#textresult{
+    background-color: white;
+    border: none !important;
+    resize: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #495057;
+}
+
+@media (max-width: 768px) {
+    .main{
+        flex-direction: column;
+    }
+    .logo{
+        width: 100%;
+        height: 10%;
+    }
+    .alert{
+        width: 90%;
+    }
+    .result{
+        width: 100%;
+        height: auto;
+    }
+    .noneteximg{
+        display: none;   
+    }
+
+    .mleft{
+        width: 100%;
+        height: 100%;
+    }
+    .input{
+        width: 90%;
+    }
+    .buttons{
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+    .btncopy{
+        width: 100%;
+    }
+    .textresultdiv{
+        height: auto;
+    }
+    #textresult{
+        height: 15rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .buttons{
+        flex-direction: column;
+    }
+    .btnencrip{
+        margin-bottom: 1rem;
+    }
+
+    button{
+        width: 18rem;
+    }
+}

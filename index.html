@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="logo">
+                <img class="logoimg" src="assets/img/Logo.png" alt="">
+            </div>
+            <div class="mleft">
+                <div class="input">
+                    <textarea name="inputtext" id="inputtext" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="alert">
+                    <span class="sapantext"><img class="imgexc" src="assets/img/exclamation.png">Solo letras minúsculas
+                        y sin acentos</span>
+                </div>
+                <div class="buttons">
+                    <button class="btnencrip" id="btnencrip" onclick="encript()">Encriptar</button>
+                    <button class="btndesen" onclick="descrip()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="result">
+                <div id="nonetex">
+                    <div class="noneteximg">
+                        <img src="assets/img/muneco.png">.
+                    </div>
+                    <div class="texx">
+                        <h3>Ningún mensaje fue encontrado</h3>
+                        <span>Ingresa el texto que desees encriptar o desencriptar.</span>
+                    </div>
+                </div>
+                <div id="yestext">
+                    <div class="textresultdiv">
+                        <textarea name="textresult" id="textresult"></textarea>
+                    </div>
+                    <div class="btnc">
+                        <button class="btncopy" onclick="copy()">Copiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
